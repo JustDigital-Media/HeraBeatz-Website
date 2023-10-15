@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    background-color: #ff3f34;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header img {
+    width:12em;
+    height:10em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2em;
+}
+
+nav{
+    background-color: #161616;
+    box-shadow: 10px solid black;
+    
+
+    align-items: center;
+}
+
+ul{
+    display:flex;
+    padding: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+li{
+    margin-left: 20px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight:500;
+
+    text-decoration: none;
+    list-style: none;
+    color:rgb(255, 255, 255);
+    display: block;
+    border-bottom: 0px solid #ff3f34;
+    content: "";
+
+}
+
+li::after {
+    content: "";
+    display: block;
+
+    width: 100%; 
+    transition: 3s 100ms;
+}
+
+
+li:hover{
+    color:#ff3f34;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.container{
+
+    background-color: rgb(26, 25, 25) !important;
+ 
+    margin: 0px 165px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    padding: 0 50px !important;
+    color:white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+
+}
+
+section h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    color: #ff3f34
+    
+}
+
+.about-section{
+
+    display:flex;
+    flex-direction: column;
+text-align: center !important;
+  padding-bottom:20px;
+    
+}
+
+.left img{
+  
+    height: 350px;
+    width: 500px;
+}
+
+.right a {
+    color:aliceblue
+}
+
+.right{
+    width: 100%;
+    padding: 20px 0;
+    text-align: left !important;
+    margin: 10px 0; /* Gives a little space between the paragraphs */
+    color: #ffffff; /* Link color, you can adjust as needed */
+    text-decoration: none; /* Removes underline from link */
+   
+}
+
+.right p{
+
+   width:900px;
+ 
+   font-weight: 600;
+   
+}
+
+body {
+    margin: 0;
+    position: relative; /* Reference for the absolute positioned ::before pseudo-element */
+    padding-bottom: 5px; /* Adjust if needed, gives space for potential overflow due to blur */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place the pseudo-element behind the content */
+
+    background-image: url('https://images.unsplash.com/photo-1605296862588-2858174c3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-repeat: repeat;
+
+    /* Applying the blur effect */
+    filter: blur(2px);
+    margin: -5px; /* Expands the area of the pseudo-element to cater for blur overflow */
+}
+
+
+.vids{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   flex-direction: column;
+   gap: 40px;
+   margin-top: 10px;
+   padding: 50px 0px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px 0;
+}
+
+label{
+    margin: 10px 0;
+    font-size: 1.3em
+}
+
+
+button:hover{
+    transition: all 200ms;
+    background-color: #f7655d;
+    cursor: pointer;
+    border: none;
+}
+
+.pricing-table {
+    display:flex;
+   padding-bottom: 20px;
+}
+
+.prices{
+    padding-left: 10px;
+    
+}
+
+
+
+.prices p {
+    margin-bottom: 10px;
+}
+
+.beat p{
+  
+font-size: 1.2em;
+font-weight: 700;
+
+}
+
+
+.beat iframe{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+
+.socials {
+
+    display:flex;
+    justify-self: end;
+  
+
+}
+i{
+    font-size: .8em;
+}
+
+
+
+.owl-nav {
+    font-size: 35px !important; /* Adjust as needed to make arrows larger */
+}
+
+.owl-prev {
+    margin-right: 15px; /* Adds space between the arrows */
+}
+
+.owl-next {
+    margin-left: 15px; /* Adds space between the arrows */
+}
+
+
+.owl-carousel .owl-item {
+    transition: transform 0.4s, opacity 0.4s; /* Adjust time as needed */
+}
+
+.owl-carousel .owl-item:not(.active) {
+    opacity: 0.5; /* Adjust opacity as needed for non-active items */
+}
+
+
+.owl-nav {
+    font-size: 30px;
+  
+}
+
+.owl-prev {
+    margin-right: 15px !important;
+}
+
+.owl-next {
+    margin-left: 15px !important;
+}
+
+.owl-carousel .owl-item {
+    transition: transform 0.4s, opacity 0.4s;
+
+}
+
+.owl-carousel .owl-item:not(.active) {
+    opacity: 0.5;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;  /* Centers them vertically */
+    transform: translateY(0%);  /* Ensures the exact centering regardless of the button's height */
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;  /* Positions the left button to the left side of the carousel */
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;  /* Positions the right button to the right side of the carousel */
+}
+
+
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.owl-nav .owl-prev {
+    left: -45px !important; /* adjust as needed */
+}
+
+.owl-nav .owl-next {
+    right: 50px !important; /* adjust as needed */
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    transform: translateY(-20%);
+}
+
+#youtubeCarousel {
+    width: calc(100% - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto; /* centers the carousel if it's not already centered */
+}
+
+#beats{
+    padding: 40px 0;
+  
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%); /* Start from below its final position */
+        opacity: 0; /* Start from fully transparent */
+    }
+    to {
+        transform: translateY(0); /* End at its final position */
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+
+.right {
+    opacity: 0;  /* Initially hidden */
+    animation-name: slideUp; /* Refer to the keyframes defined above */
+    animation-duration: 1s; /* Duration of animation. Adjust as desired */
+    animation-timing-function: ease-out; /* Eases out for smooth end */
+    animation-fill-mode: forwards; /* Keeps the end state of animation */
+    animation-delay: 0.5s; /* Optional delay before the animation starts */
+}
+
+
+#contact {
+    padding: 20px;
+
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 800px; /* Restrict the width of the form */
+    margin: 0 auto; /* Center the form */
+}
+
+#contact label {
+    display: block; /* Make the labels take up the full width of the form */
+    margin: 10px 0 5px; /* Space out the labels */
+    font-weight: bold; /* Bold the labels */
+}
+
+#contact input,
+#contact textarea {
+    width: 100%; /* Make inputs take up the full width of the form */
+    padding: 10px; /* Add padding to the inputs */
+    margin-bottom: 10px; /* Space out the inputs */
+    border: 1px solid #ccc; /* Add a border around the inputs */
+    border-radius: 5px; /* Slightly round the corners of the inputs */
+}
+#contact button {
+    padding: 8px 12px !important;             
+    font-size: 14px;                
+    background-color: #ff3f34;    /* Updated color */
+    color: #fff;                  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto !important;                  
+    display: inline-block;        
+}
+
+#contact button:hover {
+    background-color: #e6372a; /* Slightly darker shade for hover effect */
+}
+
+
+#pricing {
+    text-align: center;
+
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.price-option {
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-option:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    font-size: 24px;  /* Make headers larger */
+}
+
+.price-value {
+    font-size: 40px;  /* Much larger font size for the price */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 15px;
+    font-style: italic;  /* Styling the description in italic for differentiation */
+    font-size: 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
