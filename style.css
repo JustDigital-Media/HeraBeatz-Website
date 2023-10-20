@@ -72,8 +72,9 @@ li:hover{
  
     margin: 0px 165px !important;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-    padding: 0 50px !important;
+    padding: 0 60px !important;
     color:white;
+    margin-bottom: 60px !important;
 }
 
 section {
@@ -344,7 +345,8 @@ body {
 
 
 #contact {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 35px;
 
 }
 
