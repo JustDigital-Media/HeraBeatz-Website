@@ -532,6 +532,11 @@ h3 {
   
   .tapes {
     margin-bottom: 70px;
+   
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    gap: 20px; 
+   
   }
   
 
