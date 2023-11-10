@@ -571,11 +571,7 @@ h3 {
   /* ... other styles ... */
 
 /* Style the back, initially hidden pane */
-.back {
-    /* ... other styles ... */
-    background-color: darkgrey;
-    color:#e6372a !important;
-  }
+
   
   /* ... other styles ... */
   
@@ -599,5 +595,24 @@ h3 {
     border-bottom: none;
   }
   
+/* ... other styles ... */
+
+/* Style the cover art with a subtle grey box shadow */
+.front .cover-art {
+  
+
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  
   /* ... other styles ... */
   
+.back {
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+  #beattapes{
+
+    background-color: white;
+    width: 100%;
+  }
