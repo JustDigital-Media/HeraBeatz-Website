@@ -621,3 +621,11 @@ h3 {
     background-color: white;
     width: 100%;
   }
+
+  .btn{
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    color: #ff3f34;
+    text-align: center;
+  }
