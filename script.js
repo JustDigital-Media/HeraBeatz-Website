@@ -33,3 +33,18 @@ $(document).ready(function(){
 });
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var songs = ['./high vibez 1/Question.mp3', './high vibez 1/Far from Over.mp3', './high vibez 1/Miami Nights.mp3', './high vibez 1/Show Me.mp3', './high vibez 1/Ocean Breeze.mp3'];
+    var audioPlayer = document.getElementById('audioPlayer');
+    var songListItems = document.querySelectorAll('.back .song-list li');
+  
+    // Play a song when it is clicked in the song list
+    songListItems.forEach(function(item, index) {
+      item.addEventListener('click', function() {
+        audioPlayer.src = songs[index];
+        audioPlayer.play();
+      });
+    });
+  });
+  

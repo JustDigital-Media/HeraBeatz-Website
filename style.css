@@ -427,3 +427,177 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Entire container, to keep perspective */
+.flip-container {
+    perspective: 1000px;
+  }
+  
+  /* Flip the pane when hovered */
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-container,
+  .front,
+  .back {
+    width: 400px;
+    height: 400px;
+  }
+  
+  /* Flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  /* Hide back of pane during swap */
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Front pane, placed above back */
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  /* Back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the song list */
+  .back .song-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    counter-reset: song-number; /* Set up a counter for numbering */
+  }
+  
+  /* Style the song list items */
+  .back .song-list li {
+    counter-increment: song-number; /* Increment the counter */
+    margin: 10px 0; /* Add space between the items */
+    display: flex; /* Use flexbox for aligning number and song title */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Style the numbers before the song titles */
+  .back .song-list li::before {
+    content: counter(song-number) ". "; /* Display the counter before the item text */
+    font-weight: bold; /* Make the numbers bold */
+    margin-right: 10px; /* Add space between the number and the song title */
+  }
+  
+  /* Style the links */
+  .back .song-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Adjust font size for readability */
+  }
+  
+  /* Style your audio player */
+  #audioPlayer {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    left: 10px; /* Align with the left edge */
+  }
+  
+  /* Responsive design: when the screen is wide enough, switch to horizontal layout */
+  @media (min-width: 600px) {
+    .back .song-list {
+      flex-direction: row; /* Horizontal layout */
+      flex-wrap: wrap; /* Wrap items to next line if they don't fit */
+      justify-content: flex-start; /* Align items to the start (left) */
+    }
+    .back .song-list li {
+      width: 50%; /* Each item takes up half the width of the container */
+      margin: 5px 0; /* Adjust margin for horizontal layout */
+    }
+  }
+  
+  .tapes {
+    margin-bottom: 70px;
+  }
+  
+
+  /* ... other styles ... */
+
+/* Style the song list */
+.back .song-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    counter-reset: song-number; /* Set up a counter for numbering */
+    padding-bottom: 60px; /* Add padding to bottom to make space for the player */
+  }
+  
+  /* Style the song list items */
+  .back .song-list li {
+    counter-increment: song-number; /* Increment the counter */
+    margin: 10px 0; /* Add space between the items */
+    display: flex; /* Use flexbox for aligning number and song title */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent the text from wrapping */
+  }
+  
+  /* ... other styles ... */
+  
+  /* Style your audio player */
+  #audioPlayer {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    left: 10px; /* Align with the left edge */
+  }
+  
+  /* ... other styles ... */
+  
+  /* ... other styles ... */
+
+/* Style the back, initially hidden pane */
+.back {
+    /* ... other styles ... */
+    background-color: darkgrey;
+    color:#e6372a !important;
+  }
+  
+  /* ... other styles ... */
+  
+
+  /* ... other styles ... */
+
+/* Style the song list items */
+.back .song-list li {
+    counter-increment: song-number; /* Increment the counter */
+    margin: 10px 0; /* Add space between the items */
+    padding: 5px 0; /* Add padding to give some space above and below the text */
+    display: flex; /* Use flexbox for aligning number and song title */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    border-bottom: 1px solid #ccc; /* Add a line under each song */
+  }
+  
+  /* Last child should not have a border at the bottom */
+  .back .song-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* ... other styles ... */
+  
