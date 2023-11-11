@@ -535,7 +535,7 @@ h3 {
    
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next row */
-    gap: 20px; 
+    gap: 50px; 
    
   }
   
@@ -629,3 +629,71 @@ h3 {
     color: #ff3f34;
     text-align: center;
   }
+
+
+  /* Base styles, which are mobile-first (these apply to all screen sizes) */
+/* ... existing CSS ... */
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+    header img {
+        width: 12em; /* Fixed size for larger screens */
+        padding: 2em;
+    }
+
+    .container {
+        margin: 0px 10%; /* Larger margin for larger screens */
+        padding: 0 4%; /* Relative padding */
+    }
+
+    .vids {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+
+   
+
+    .pricing-table {
+        flex-direction: row; /* Row direction for desktops */
+    }
+
+    .owl-nav {
+        font-size: 35px; /* Larger arrows for larger screens */
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    header {
+        height: 20vh; /* Smaller header for larger screens */
+    }
+
+
+
+    .container {
+        margin: 0px 15%; /* Larger margin for larger screens */
+        padding: 0 2%; /* Less padding for larger screens */
+    }
+
+    .vids {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+  
+
+    .pricing-table {
+        justify-content: space-around; /* Space out pricing tables on larger screens */
+    }
+
+    .owl-nav {
+        display: block; /* Ensure nav is always visible on larger screens */
+    }
+}
+
+/* Extra Large screens (wide desktops) */
+@media (min-width: 1200px) {
+    .container {
+        margin: 0px 20%; /* Even larger margin for extra large screens */
+    }
+
+  
+}
