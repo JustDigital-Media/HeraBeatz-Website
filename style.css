@@ -697,3 +697,31 @@ h3 {
 
   
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        width: 100% !important;
+    }
+ 
+    .container {
+ width: 100%''
+
+      padding:0 !important;
+      margin: 0 !important;
+    }
+    nav{
+        display:none;
+    }
+
+    .right p{
+        width: 100%;
+    }
+
+    #beats{
+        display:none;
+    }
+
+   
+  }
