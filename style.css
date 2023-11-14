@@ -740,3 +740,12 @@ a {
    
   }
 
+  @media  only screen and (min-width: 1024px) {
+
+    header {
+        height: 20vh;
+        padding: 3em;
+    }
+
+  }
+ 
