@@ -1,27 +1,34 @@
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["name"]));
-    $phone = strip_tags(trim($_POST["phone"]));
-    $message = strip_tags(trim($_POST["message"]));
+    // Retrieve form data
+    $name = $_POST["name"];
+    $phone = $_POST["phone"];
+    $message = $_POST["message"];
 
-    $recipient = "herabeatzbusiness@gmail.com"; // replace with your email
-    $subject = "New contact form submission from $name";
+    // Set your email address
+    $to = "herabeatzbusiness@gmail.com";
 
-    $email_content = "Name: $name\n";
-    $email_content .= "Phone: $phone\n\n";
-    $email_content .= "Message:\n$message\n";
+    // Subject of the email
+    $subject = "New Contact Form Submission";
 
-    $headers = "From: $name <$recipient>";
+    // Email content
+    $emailContent = "Name: $name\n";
+    $emailContent .= "Phone: $phone\n";
+    $emailContent .= "Message:\n$message";
 
-    mail($recipient, $subject, $email_content, $headers);
+    // Additional headers
+    $headers = "From: $name <$to>";
 
-    header("Location: index.html"); // replace with your page URL
-    exit;
+    // Send the email
+    if (mail($to, $subject, $emailContent, $headers)) {
+        // If the email is sent successfully, you can redirect the user to a thank-you page
+        header("Location: thank-you.html");
+        exit();
+    } else {
+        // If there is an error, you can redirect the user to an error page
+        header("Location: error.html");
+        exit();
+    }
 }
 ?>
-
-
-<?php
-echo "PHP is working!";
-?>
-

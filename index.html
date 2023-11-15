@@ -221,19 +221,21 @@
            
                 <h1>Contact</h1>
 
-                <form action="submit.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" required>
-                    
-                    <label for="phone">Phone Number</label>
-                    <input type="number" name="phone" required>
-                    
-                    <label for="message">Message</label>
-                    <textarea name="message" cols="30" rows="10" required></textarea>
-                    
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
+                <form
+  action="https://formspree.io/f/mjvqdwvr"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="name" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
                 
             </section>
 

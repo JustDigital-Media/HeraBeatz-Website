@@ -388,7 +388,7 @@ body {
 }
 
 #contact input,
-#contact textarea {
+textarea {
     width: 100%; /* Make inputs take up the full width of the form */
     padding: 10px; /* Add padding to the inputs */
     margin-bottom: 10px; /* Space out the inputs */
@@ -816,3 +816,11 @@ form {
   }
 
   
+  textarea{
+    height: 10em;
+
+  }
+
+  label{
+    padding-bottom: 2em !important;
+  }
