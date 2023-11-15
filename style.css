@@ -11,7 +11,7 @@ html {
 
 header{
     background-color: #ff3f34;
-    height: 30vh;
+    height: 34vh;
     display: flex;
     justify-content: center;
  
@@ -38,7 +38,7 @@ nav{
 
 ul{
     display:flex;
-    padding: 10px;
+    padding: 11px;
     justify-content: center;
 
     background-color: #161616;
