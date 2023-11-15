@@ -30,17 +30,17 @@ header img {
 nav{
     background-color: #161616;
     box-shadow: 10px solid black;
-    
+    border-bottom: 1px solid #ff3f34;
 
     align-items: center;
 }
 
 ul{
     display:flex;
-    padding: 13px;
+    padding: 11px;
     justify-content: center;
 
-    background-color: #ff3f34;
+    background-color: #161616;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  
 }
@@ -48,7 +48,7 @@ ul{
 li{
     margin-left: 20px;
     font-size: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight:500;
     position: relative;
     text-decoration: none;
@@ -73,7 +73,7 @@ li::after {
   
   li:hover::after {
     width: 100%; /* Expand the width on hover */
-    background-color: #ffffff; /* Set the background color on hover */
+    background-color: #ff3f34; /* Set the background color on hover */
   }
   
   li:hover {
@@ -82,7 +82,8 @@ li::after {
   }
 
   nav i {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    font-weight: 400;
   }
 .container{
 
