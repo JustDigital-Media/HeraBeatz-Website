@@ -31,13 +31,14 @@ nav{
     background-color: #161616;
     box-shadow: 10px solid black;
     border-bottom: 1px solid #ff3f34;
+    
 
     align-items: center;
 }
 
 ul{
     display:flex;
-    padding: 11px;
+    padding: 10px;
     justify-content: center;
 
     background-color: #161616;
