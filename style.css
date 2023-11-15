@@ -37,10 +37,12 @@ nav{
 
 ul{
     display:flex;
-    padding: 15px;
+    padding: 13px;
     justify-content: center;
-    margin-top: 10px;
-    border-bottom: 1.5px solid white;
+
+    background-color: #ff3f34;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
 }
 
 li{
@@ -48,7 +50,7 @@ li{
     font-size: 24px;
     margin-bottom: 5px;
     font-weight:500;
-
+    position: relative;
     text-decoration: none;
     list-style: none;
     color:rgb(255, 255, 255);
@@ -60,19 +62,28 @@ li{
 
 li::after {
     content: "";
-    display: block;
+    position: absolute; /* Position pseudo-element absolutely within the li */
+    left: 0;
+    bottom: 0;
+    width: 0; /* Set initial width to 0 */
+    height: 3px; /* Set the height of the pseudo-element, for example, an underline effect */
+ /* Set the initial background color of the pseudo-element */
+    transition: all 0.3s ease; /* Use a smooth transition effect */
+  }
+  
+  li:hover::after {
+    width: 100%; /* Expand the width on hover */
+    background-color: #ffffff; /* Set the background color on hover */
+  }
+  
+  li:hover {
 
-    width: 100%; 
-    transition: 3s 100ms;
-}
-
-
-li:hover{
-    color:#ff3f34;
     cursor: pointer;
-    transition: all 100ms;
-}
+  }
 
+  nav i {
+    font-size: 0.8em;
+  }
 .container{
 
     background-color: rgb(26, 25, 25) !important;
@@ -762,3 +773,13 @@ form {
 
   }
  
+/* Add this to your existing styles */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* You can change the background color to suit your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+    z-index: 1000; /* Set a high z-index to ensure it stays on top of other elements */
+  }
+  

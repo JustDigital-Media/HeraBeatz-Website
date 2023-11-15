@@ -246,6 +246,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     
+<!-- Add this before the closing </body> tag or in an external script file -->
+<script>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the navigation bar element
+    var nav = document.querySelector("nav");
+
+    // Get the initial position of the navigation bar
+    var navOffset = nav.offsetTop;
+
+    // Function to handle scroll events
+    function handleScroll() {
+      // Check if the user has scrolled past the initial position of the navigation bar
+      if (window.pageYOffset >= navOffset) {
+        // If yes, add the 'sticky' class
+        nav.classList.add("sticky");
+      } else {
+        // If no, remove the 'sticky' class
+        nav.classList.remove("sticky");
+      }
+    }
+
+    // Attach the handleScroll function to the scroll event
+    window.addEventListener("scroll", handleScroll);
+  });
+</script>
 
 </body>
 </html>
