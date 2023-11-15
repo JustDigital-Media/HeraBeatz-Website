@@ -736,6 +736,19 @@ a {
         display:none;
     }
     
+    #beattapes, .btn{
+       
+    display:none;
+      
+    }
+
+    
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
 
    
   }
