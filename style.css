@@ -162,7 +162,7 @@ text-align: center !important;
 body {
     margin: 0;
     position: relative; /* Reference for the absolute positioned ::before pseudo-element */
-    padding-bottom: 5px; /* Adjust if needed, gives space for potential overflow due to blur */
+   
 }
 
 body::before {
