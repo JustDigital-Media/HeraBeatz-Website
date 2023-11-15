@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+footer{
+   
+    padding: 1em 0;
+    margin-top: 2em;
+}
 
 *{
     padding: 0;
@@ -36,7 +41,7 @@ nav{
     align-items: center;
 }
 
-ul{
+nav ul{
     display:flex;
     padding: 11px;
     justify-content: center;
@@ -46,7 +51,7 @@ ul{
  
 }
 
-li{
+nav li, .beat-tape li{
     margin-left: 20px;
     font-size: 24px;
     margin-bottom: 10px;
@@ -72,7 +77,7 @@ li::after {
     transition: all 0.3s ease; /* Use a smooth transition effect */
   }
   
-  li:hover::after {
+  nav li:hover::after, .beat-tape li:hover::after {
     width: 100%; /* Expand the width on hover */
     background-color: #ff3f34; /* Set the background color on hover */
   }
@@ -824,3 +829,105 @@ form {
   label{
     padding-bottom: 2em !important;
   }
+
+  .social {
+    --transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s linear, background 0.3s linear, border-color 0.3s linear;
+    --background: #FFF;
+    --text-color: #555;
+    
+    display: inline-flex;
+    gap: 2em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    
+    .icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      font-size: 1.8rem;
+      width: 2.2em;
+      height: 2.2em;
+      text-decoration: none;
+      background: var(--background);
+      color: var(--text-color);
+      border-radius: 50%;
+      box-shadow: 0 8px 16px -4px rgba(0,0,0,.15);
+      transition: var(--transition);
+      
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    
+    .name {
+      position: absolute;
+      top: 0;
+      background: var(--background);
+      color: #FFF;
+      box-shadow: inherit;
+      font-size: 1.2rem;
+      padding: .25em .4em;
+      border-radius: .3em;
+      opacity: 0;
+      transition: var(--transition);
+      
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -.325em;
+        left: 50%;
+        border-top: .35em solid var(--background);
+        border-left: .35em solid transparent;
+        border-right: .35em solid transparent;
+        transform: translateX(-50%);
+        transition: var(--transition);
+      }
+    }
+    
+    .icon:hover,
+    .icon:focus {
+      .name {
+        transform: translateY(-2.85em);
+        opacity: 1;
+      }
+    }
+    
+    [href^="https://instagram.com"] {
+      --text-color: #962FBF;
+      &:hover,
+      &:focus {
+        --background: #962FBF;
+        --text-color: #fff;
+      }
+    }
+    
+    [href^="https://youtube.com"] {
+      --text-color: #CD201F;
+      &:hover,
+      &:focus {
+        --background: #CD201F;
+        --text-color: #fff;
+      }
+    }
+    
+    [href^="https://tiktok.com"] {
+      --text-color: #000;
+      &:hover,
+      &:focus {
+        --background: #000;
+        --text-color: #fff;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
