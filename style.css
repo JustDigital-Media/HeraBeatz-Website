@@ -787,3 +787,32 @@ form {
     z-index: 1000; /* Set a high z-index to ensure it stays on top of other elements */
   }
   
+
+  /* Add this to your existing styles or create a new stylesheet */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Black background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000; /* Make sure it's on top of other elements */
+  }
+  
+  #loader img {
+    width: 200px; /* Adjust the width of your logo image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
+  #loader p {
+    margin-top: 10px; /* Adjust spacing between image and text */
+    font-size: 16px; /* Adjust font size */
+    color:white;
+  }
+
+  

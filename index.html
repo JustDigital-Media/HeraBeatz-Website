@@ -15,6 +15,12 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
+
+  <div id="loader">
+    <img src="./Hera Beatz 2 (THis).png" alt="Logo">
+
+    <p>Loading...</p>
+  </div>
     
     <header>
 
@@ -271,7 +277,25 @@
     // Attach the handleScroll function to the scroll event
     window.addEventListener("scroll", handleScroll);
   });
+
+
+  
+  
+  $(document).ready(function () {
+    var loader = $("#loader");
+
+    // Fade in the loader
+    loader.fadeIn();
+
+    // Hide the loader after 2 seconds
+    setTimeout(function () {
+      loader.fadeOut();
+    }, 800);
+  });
+
 </script>
+<!-- Add this just before the closing </body> tag or in an external script file -->
+
 
 </body>
 </html>
