@@ -49,7 +49,7 @@ nav ul{
     padding: 11px;
     justify-content: center;
 
-    background-color: #161616;
+   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  
 }
@@ -786,6 +786,8 @@ form {
  
 /* Add this to your existing styles */
 .sticky {
+  background-color: #302323 !important;
+
     position: fixed;
     top: 0;
     width: 100%;
