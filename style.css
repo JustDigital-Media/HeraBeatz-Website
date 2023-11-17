@@ -786,7 +786,7 @@ form {
  
 /* Add this to your existing styles */
 .sticky {
-  background-color: #302323 !important;
+  background-color: #ff3f34 !important;
 
     position: fixed;
     top: 0;
