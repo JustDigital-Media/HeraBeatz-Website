@@ -955,3 +955,17 @@ header img {
   animation-delay: 1.3s; /* This will delay the start of the animation by 1 second */
   animation-fill-mode: both; /* This will maintain the final state after the animation completes */
 }
+
+
+
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+
+#loader p {
+  animation: fade 2s ease-in-out infinite;
+}
