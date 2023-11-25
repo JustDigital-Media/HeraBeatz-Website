@@ -689,8 +689,8 @@ h3 {
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
     header img {
-        width: 12em; /* Fixed size for larger screens */
-        padding: 2em;
+        width: 10em; /* Fixed size for larger screens */
+      
     }
 
     .container {
@@ -758,6 +758,11 @@ a {
 
 
 @media only screen and (max-width: 600px) {
+
+  header {
+    padding: 4em !important;
+    height: 37vh !important;
+  }
 
     body{
         width: 100% !important;
@@ -837,7 +842,7 @@ form {
   }
   
   #loader img {
-    width: 12.5em; /* Adjust the width of your logo image */
+    width: 11.5em; /* Adjust the width of your logo image */
     height: auto; /* Maintain aspect ratio */
   }
   
