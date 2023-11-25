@@ -17,9 +17,28 @@ footer{
 
 }
 
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust the px value to increase or decrease the blur effect */
+  z-index: -1;
+}
+
+header {
+  position: relative;
+  overflow: hidden; /* Ensures the blur does not bleed outside the viewport */
+}
+
 header{
-    background-color: #ff3f34;
-    height: 34vh;
+
+    height: 30vh !important;
     display: flex;
     justify-content: center;
  
@@ -27,12 +46,16 @@ header{
     
 }
 
+
+
+
 header img {
-    width:12em;
-    height:10em;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 2em !important;
-    margin: 1em !important;
+
+
+    width:15em !important;
+    height:12em;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
+  
 }
 
 nav{
@@ -40,7 +63,7 @@ nav{
     box-shadow: 10px solid black;
     border-bottom: 1px solid #ff3f34;
     
-
+    border-top: 1px solid #ff3f34;
     align-items: center;
 }
 
@@ -787,6 +810,7 @@ form {
 /* Add this to your existing styles */
 .sticky {
   background-color: rgba(0, 0, 0, 0.966) !important;
+ border-bottom: 1px solid rgb(255, 63, 52);
 
     position: fixed;
     top: 0;
@@ -952,7 +976,7 @@ form {
 header img {
   animation-name: fadeIn;
   animation-duration: 1s;
-  animation-delay: 1.5s; /* This will delay the start of the animation by 1 second */
+  animation-delay: 1.8s; /* This will delay the start of the animation by 1 second */
   animation-fill-mode: both; /* This will maintain the final state after the animation completes */
 }
 
