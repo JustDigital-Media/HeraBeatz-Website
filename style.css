@@ -69,7 +69,7 @@ nav{
 
 nav ul{
     display:flex;
-    padding: 10px;
+    padding: 20px;
     justify-content: center;
 
    
@@ -79,8 +79,8 @@ nav ul{
 
 nav li, .beat-tape li{
     margin-left: 20px;
-    font-size: 24px;
-    margin-bottom: 10px !important;
+    font-size: 26px;
+
 
     font-weight:500;
     position: relative;
