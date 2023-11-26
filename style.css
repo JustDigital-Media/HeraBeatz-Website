@@ -373,7 +373,7 @@ body {
     animation-duration: 1s; /* Duration of animation. Adjust as desired */
     animation-timing-function: ease-out; /* Eases out for smooth end */
     animation-fill-mode: forwards; /* Keeps the end state of animation */
-    animation-delay: 1.5s; /* Optional delay before the animation starts */
+    animation-delay: 2s; /* Optional delay before the animation starts */
 }
 
 
@@ -969,7 +969,7 @@ form {
 header img {
   animation-name: fadeIn;
   animation-duration: 1s;
-  animation-delay: 1.8s; /* This will delay the start of the animation by 1 second */
+  animation-delay: 2s; /* This will delay the start of the animation by 1 second */
   animation-fill-mode: both; /* This will maintain the final state after the animation completes */
 }
 
