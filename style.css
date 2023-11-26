@@ -1040,6 +1040,18 @@ header img {
     margin-left: .4em;
   }
 
+  section{
+    padding: 2.1em;
+  }
+
+  #contact{
+    padding: 2.5em;
+  }
+
+  .sticky{
+    width:80%;
+  }
+
   /* ... other styles ... */
 }
 
