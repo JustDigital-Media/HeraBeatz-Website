@@ -992,64 +992,59 @@ header img {
 
 
 
-
 /* Desktop view */
 @media (max-width: 700px) {
   nav {
     display: flex;
-    justify-content: space-between; /* This will space out the hamburger icon and the social icons */
+    justify-content: space-between;
     align-items: center;
-    padding: 1em 2.5em; /* This will vertically align the items in the middle */
-    position: relative; /* Set the position to relative to serve as an anchor point for the absolute positioning of nav-links */
+    padding: 1em 2.5em;
+    position: relative;
   }
 
   #nav-links {
-    display: none; /* Hide the links by default */
-    width: 60%; /* Ensure the nav links take the full width of their parent */
-    flex-direction: column; /* Stack the links vertically */
-    position: absolute; /* Position them absolutely to not affect other elements' positioning */
-    top: 100%; /* Position them right below the nav */
+    display: none;
+    width: 60%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
     left: 0;
     z-index: 100000;
-    background-color: #101010 !important; /* Set a background color that matches your design */
-    /* Add padding or other styles as needed */
+    background-color: #101010 !important;
+  /* Added a white border */
+    transition: max-height 0.3s ease; /* Transition for smooth animation */
+    overflow: hidden; /* Prevents content from spilling out during animation */
+    max-height: 0; /* Start with 0 height */
+  }
+
+  #nav-links.toggle {
+    display: flex;
+    max-height: 500px; /* Adjust as needed for your content */
   }
 
   #hamburger-icon {
-    display: block; /* Show the hamburger icon */
+    display: block;
     cursor: pointer;
     font-size: 2em;
     color: white;
-    /* Additional styling for positioning and appearance */
   }
 
   .socials {
     display: flex;
-    align-items: center; /* Align the social icons in the middle vertically */
+    align-items: center;
   }
 
   .socials a {
-    color: white; /* Set the color of icons to white */
+    color: white;
     font-size: 2em;
-    margin-left: .4em; /* Set the size of icons */
-    /* Add any additional spacing if needed */
+    margin-left: .4em;
   }
 
-  section{
-    padding: 1.8em;
-  }
-  #contact{
-    padding: 2.5em;
-  }
-
-  .sticky{
-    width: 83%;
-  }
-
-  header{
-    height: 20vh !important;
-  }
+  /* ... other styles ... */
 }
+
+/* Additional JavaScript to handle the clicking of the hamburger icon */
+
 
 
 /* ... other styles ... */

@@ -346,14 +346,11 @@
     }, 800);
   });
 
-  function toggleMenu() {
-  var navLinks = document.getElementById("nav-links");
-  if (navLinks.style.display === "block") {
-    navLinks.style.display = "none";
-  } else {
-    navLinks.style.display = "block";
-  }
-}
+  document.getElementById('hamburger-icon').addEventListener('click', function() {
+  var navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('toggle');
+});
+
 
 </script>
 
