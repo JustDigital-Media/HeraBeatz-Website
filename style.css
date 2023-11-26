@@ -135,14 +135,14 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0;
+
 
 }
 
 section h1 {
     font-size: 3em;
     text-transform: uppercase;
-    padding: 15px 0px;
+    padding: 3em 0px !important;
     color: #ff3f34
     
 }
@@ -365,10 +365,7 @@ i{
     margin: 0 auto; /* centers the carousel if it's not already centered */
 }
 
-#beats{
-    padding: 40px 0;
-  
-}
+
 
 body {
     font-family: 'Poppins', sans-serif !important;
@@ -1009,3 +1006,4 @@ header img {
 #loader p {
   animation: fade 1.5s ease-in-out infinite;
 }
+
