@@ -1005,13 +1005,13 @@ header img {
 
   #nav-links {
     display: none; /* Hide the links by default */
-    width: 100%; /* Ensure the nav links take the full width of their parent */
+    width: 60%; /* Ensure the nav links take the full width of their parent */
     flex-direction: column; /* Stack the links vertically */
     position: absolute; /* Position them absolutely to not affect other elements' positioning */
     top: 100%; /* Position them right below the nav */
     left: 0;
     z-index: 100000;
-    background-color: rgb(26, 25, 25) !important; /* Set a background color that matches your design */
+    background-color: #101010 !important; /* Set a background color that matches your design */
     /* Add padding or other styles as needed */
   }
 
@@ -1036,7 +1036,7 @@ header img {
   }
 
   section{
-    padding: 1.5em;
+    padding: 1.8em;
   }
   #contact{
     padding: 2.5em;
@@ -1044,6 +1044,10 @@ header img {
 
   .sticky{
     width: 83%;
+  }
+
+  header{
+    height: 20vh !important;
   }
 }
 
