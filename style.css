@@ -100,7 +100,7 @@ li::after {
     left: 0;
     bottom: -7px;
     width: 0; /* Set initial width to 0 */
-    height: 3px; /* Set the height of the pseudo-element, for example, an underline effect */
+    height: 2.4px; /* Set the height of the pseudo-element, for example, an underline effect */
  /* Set the initial background color of the pseudo-element */
     transition: all 0.3s ease; /* Use a smooth transition effect */
   }
