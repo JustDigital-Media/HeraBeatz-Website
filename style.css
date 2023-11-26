@@ -1015,19 +1015,28 @@ header img {
   nav {
     display: flex;
     justify-content: space-between; /* This will space out the hamburger icon and the social icons */
-    align-items: center; 
-    padding: 1em;/* This will vertically align the items in the middle */
+    align-items: center;
+    padding: 1em; /* This will vertically align the items in the middle */
+    position: relative; /* Set the position to relative to serve as an anchor point for the absolute positioning of nav-links */
   }
 
   #nav-links {
     display: none; /* Hide the links by default */
+    width: 100%; /* Ensure the nav links take the full width of their parent */
+    flex-direction: column; /* Stack the links vertically */
+    position: absolute; /* Position them absolutely to not affect other elements' positioning */
+    top: 100%; /* Position them right below the nav */
+    left: 0;
+    z-index: 100000;
+    background-color: rgb(26, 25, 25) !important; /* Set a background color that matches your design */
+    /* Add padding or other styles as needed */
   }
 
   #hamburger-icon {
     display: block; /* Show the hamburger icon */
     cursor: pointer;
     font-size: 2em;
-    color:white;
+    color: white;
     /* Additional styling for positioning and appearance */
   }
 
