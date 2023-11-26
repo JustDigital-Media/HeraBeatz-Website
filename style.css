@@ -999,7 +999,7 @@ header img {
     display: flex;
     justify-content: space-between; /* This will space out the hamburger icon and the social icons */
     align-items: center;
-    padding: 1em; /* This will vertically align the items in the middle */
+    padding: 1em 2.5em; /* This will vertically align the items in the middle */
     position: relative; /* Set the position to relative to serve as an anchor point for the absolute positioning of nav-links */
   }
 
@@ -1033,6 +1033,17 @@ header img {
     font-size: 2em;
     margin-left: .4em; /* Set the size of icons */
     /* Add any additional spacing if needed */
+  }
+
+  section{
+    padding: 1.5em;
+  }
+  #contact{
+    padding: 2.5em;
+  }
+
+  .sticky{
+    width: 83%;
   }
 }
 
