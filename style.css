@@ -1025,7 +1025,7 @@ header img {
   #hamburger-icon {
     display: block;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
   }
 
@@ -1037,7 +1037,7 @@ header img {
   .socials a {
     color: white;
     font-size: 2em;
-    margin-left: .4em;
+    margin-left: .5em;
   }
 
   section{
