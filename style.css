@@ -93,22 +93,7 @@ nav li, .beat-tape li{
 
 }
 
-li::after {
-    content: "";
-  
-    position: absolute; /* Position pseudo-element absolutely within the li */
-    left: 0;
-    bottom: -7px;
-    width: 0; /* Set initial width to 0 */
-    height: 2.4px; /* Set the height of the pseudo-element, for example, an underline effect */
- /* Set the initial background color of the pseudo-element */
-    transition: all 0.3s ease; /* Use a smooth transition effect */
-  }
-  
-  nav li:hover::after, .beat-tape li:hover::after {
-    width: 100%; /* Expand the width on hover */
-    background-color: #ff3f34; /* Set the background color on hover */
-  }
+
   
   li:hover {
 
@@ -1052,3 +1037,28 @@ header img {
     /* Add any additional spacing if needed */
   }
 }
+
+
+/* ... other styles ... */
+
+nav li {
+  margin-left: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  display: inline-block; /* Changed from block to inline-block */
+  border-bottom: 0px solid #ff3f34; /* This line can be removed if not needed */
+  padding: 10px 20px; /* Add padding to create space for the background */
+  border-radius: 25px; /* Half of height to create a pill shape */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: #ff3f34; /* Pill shape's background color on hover */
+}
+
+/* ... other styles ... */
