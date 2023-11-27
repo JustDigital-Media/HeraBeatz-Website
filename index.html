@@ -43,25 +43,28 @@
     </header>
 
     <nav>
+      <div id="hamburger-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i> 
 
-      <ul>
-        <li><a href="#about"><i style="font-size: 0.65em" class="fa-solid fa-headphones"></i> About</a></li>
-        <li><a href="#beats"><i style="font-size: 0.65em"class="fa-solid fa-music"></i> Beats</a></li>
-        <li><a href="#pricing"><i style="font-size: 0.65em"class="fa-solid fa-tag"></i> Pricing</a></li>
-        <li><a href="#beattapes"><i style="font-size: 0.65em"class="fa-solid fa-circle-play"></i> Tapes</a></li>
-        <li><a href="#contact"><i style="font-size: 0.65em" class="fa-solid fa-address-book"></i> Contact</a></li>
-    
-        <div class="socials">
-          
-          <li><a href="https://www.youtube.com/channel/UC3ADBsoXksa-i8_F8Ma7jhQ"><i class="fa-brands fa-youtube"></i></a></li>
-          <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
-        </div>
-    </ul>
-    
 
        
-       
+      </div>
+    
+      <ul id="nav-links">
+        <li><a href="#about"><i class="fa fa-headphones"></i> About</a></li>
+        <li><a href="#beats"><i class="fa fa-music"></i> Beats</a></li>
+        <li><a href="#pricing"><i class="fa fa-tag"></i> Pricing</a></li>
+        <li><a href="#beattapes"><i class="fa fa-circle-play"></i> Tapes</a></li>
+        <li><a href="#contact"><i class="fa fa-address-book"></i> Contact</a></li>
+      </ul>
+    
+      <div class="socials">
+        
+        <a href="https://www.youtube.com/channel/UC3ADBsoXksa-i8_F8Ma7jhQ"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </nav>
+    
    <div class="container">
 
     <section id="about"> <h1>About</h1>
@@ -342,6 +345,12 @@
       loader.fadeOut();
     }, 800);
   });
+
+  document.getElementById('hamburger-icon').addEventListener('click', function() {
+  var navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('toggle');
+});
+
 
 </script>
 
