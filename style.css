@@ -12,8 +12,8 @@ footer{
 }
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 
 }
 
@@ -139,13 +139,6 @@ section {
 
 }
 
-section h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-    padding: 3em 0px !important;
-    color: #ff3f34
-    
-}
 
 .about-section{
 
@@ -763,10 +756,7 @@ a {
   }
   
 
-  section h1 {
-    font-size: 2.5em;
-  }
-
+ 
   header {
     padding: 4em !important;
 
@@ -779,8 +769,7 @@ a {
     .container {
  width: 100%''
 
-      padding:0 !important;
-      margin: 0 !important;
+     
     }
     nav{
         display:none;
@@ -975,8 +964,8 @@ form {
   .social
   .icon {
     
-      width: 2em;
-      height: 2em;
+      width: 1.6em;
+      height: 1.6em;
      
   }
 
@@ -1007,3 +996,11 @@ header img {
   animation: fade 1.5s ease-in-out infinite;
 }
 
+section h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+ 
+  color: #ff3f34;
+  padding: 1em 0px !important;
+  
+}
