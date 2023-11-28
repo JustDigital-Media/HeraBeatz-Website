@@ -1,49 +1,49 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 footer{
-   
-    padding: 1.2em 0;
-  
-    display: flex;
-    justify-content:center;
-    align-items:center;
+ 
+  padding: 1.2em 0;
+
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 
 *{
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0;
+  margin: 0;
 
 }
 
 header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px); /* Adjust the px value to increase or decrease the blur effect */
-  z-index: -1;
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: url('https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-size: cover;
+background-position: center;
+filter: blur(8px); /* Adjust the px value to increase or decrease the blur effect */
+z-index: -1;
 }
 
 header {
-  position: relative;
-  overflow: hidden; /* Ensures the blur does not bleed outside the viewport */
+position: relative;
+overflow: hidden; /* Ensures the blur does not bleed outside the viewport */
 }
 
 header{
 
-    height: 30vh !important;
-    display: flex;
-    justify-content: center;
- 
-    align-items: center;
-    
+  height: 30vh !important;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  
 }
 
 
@@ -52,202 +52,192 @@ header{
 header img {
 
 
-    width:15em !important;
-    height:12em;
-    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
-  
+  width:15em !important;
+  height:12em;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
+
 }
 
 nav{
-    background-color: #161616;
-    box-shadow: 10px solid black;
-    border-bottom: 1px solid #ff3f34;
-    
-    border-top: 1px solid #ff3f34;
-    align-items: center;
+  background-color: #101010;
+  box-shadow: 10px solid black;
+
+  align-items: center;
 }
 
 nav ul{
-    display:flex;
-    padding: 20px;
-    justify-content: center;
+  display:flex;
 
-   
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+
  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 nav li, .beat-tape li{
-    margin-left: 20px;
-    font-size: 26px;
+  margin-left: 20px;
+  font-size: 26px;
 
 
-    font-weight:500;
-    position: relative;
-    text-decoration: none;
-    list-style: none;
-    color:rgb(255, 255, 255);
-    display: block;
-    border-bottom: 0px solid #ff3f34;
-    content: "";
+  font-weight:500;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  color:rgb(255, 255, 255);
+  display: block;
+  border-bottom: 0px solid #ff3f34;
+  content: "";
 
 }
 
-li::after {
-    content: "";
-  
-    position: absolute; /* Position pseudo-element absolutely within the li */
-    left: 0;
-    bottom: -7px;
-    width: 0; /* Set initial width to 0 */
-    height: 2.4px; /* Set the height of the pseudo-element, for example, an underline effect */
- /* Set the initial background color of the pseudo-element */
-    transition: all 0.3s ease; /* Use a smooth transition effect */
-  }
-  
-  nav li:hover::after, .beat-tape li:hover::after {
-    width: 100%; /* Expand the width on hover */
-    background-color: #ff3f34; /* Set the background color on hover */
-  }
-  
-  li:hover {
 
-    cursor: pointer;
-  }
 
-  nav i {
-    font-size: 0.7em;
-    font-weight: 400;
-  }
+li:hover {
+
+  cursor: pointer;
+}
+
+nav i {
+  font-size: 0.7em;
+  font-weight: 400;
+}
 .container{
 
-    background-color: rgb(26, 25, 25) !important;
- 
-    margin: 0px 165px !important;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-    padding: 0 60px !important;
-    color:white;
+  background-color: rgb(26, 25, 25) !important;
+
+  margin: 0px 165px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  padding: 0 60px !important;
+  color:white;
 
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 
 }
 
+section h1 {
+  font-size: 2.7em;
+  text-transform: uppercase;
+  padding: .8em 0px !important;
+  color: #ff3f34
+  
+}
 
 .about-section{
 
-    display:flex;
-    flex-direction: column;
+  display:flex;
+  flex-direction: column;
 text-align: center !important;
-  padding-bottom:20px;
-    
+padding-bottom:20px;
+  
 }
 
 .left img{
-  
-    height: 350px;
-    width: 500px;
+
+  height: 350px;
+  width: 500px;
 }
 
 .right a {
-    color:aliceblue
+  color:aliceblue
 }
 
 .right{
-    width: 100%;
-    padding: 20px 0;
-    text-align: left !important;
-    margin: 10px 0; /* Gives a little space between the paragraphs */
-    color: #ffffff; /* Link color, you can adjust as needed */
-    text-decoration: none; /* Removes underline from link */
-   
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: left !important;
+  margin: 10px 0; /* Gives a little space between the paragraphs */
+  color: #ffffff; /* Link color, you can adjust as needed */
+  text-decoration: none; /* Removes underline from link */
+ 
 }
 
 .right p{
 
-   width:900px;
+ width:900px;
+
+ font-weight: 600;
  
-   font-weight: 600;
-   
 }
 
 body {
-    margin: 0;
-    position: relative; /* Reference for the absolute positioned ::before pseudo-element */
-   
+  margin: 0;
+  position: relative; /* Reference for the absolute positioned ::before pseudo-element */
+ 
 }
 
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* Place the pseudo-element behind the content */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place the pseudo-element behind the content */
 
-    background-image: url('https://images.unsplash.com/photo-1605296862588-2858174c3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
-    background-repeat: repeat;
+  background-image: url('https://images.unsplash.com/photo-1605296862588-2858174c3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+  background-repeat: repeat;
 
-    /* Applying the blur effect */
-    filter: blur(2px);
-    margin: -5px; /* Expands the area of the pseudo-element to cater for blur overflow */
+  /* Applying the blur effect */
+  filter: blur(2px);
+  margin: -5px; /* Expands the area of the pseudo-element to cater for blur overflow */
 }
 
 
 .vids{
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   flex-direction: column;
-   gap: 40px;
-   margin-top: 10px;
-   padding: 50px 0px;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ flex-direction: column;
+ gap: 40px;
+ margin-top: 10px;
+ padding: 50px 0px;
 }
 
 form{
-    display:flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 20px 0;
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px 0;
 }
 
 label{
-    margin: 10px 0;
-    font-size: 1.3em
+  margin: 10px 0;
+  font-size: 1.3em
 }
 
 
 button:hover{
-    transition: all 200ms;
-    background-color: #f7655d;
-    cursor: pointer;
-    border: none;
+  transition: all 200ms;
+  background-color: #f7655d;
+  cursor: pointer;
+  border: none;
 }
 
 .pricing-table {
-    display:flex;
-   padding-bottom: 20px;
+  display:flex;
+ padding-bottom: 20px;
 }
 
 .prices{
-    padding-left: 10px;
-    
+  padding-left: 10px;
+  
 }
 
 
 
 .prices p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .beat p{
-  
+
 font-size: 1.2em;
 font-weight: 700;
 
@@ -255,752 +245,844 @@ font-weight: 700;
 
 
 .beat iframe{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
 
 
 .socials {
 
-    display:flex;
-    justify-self: end;
-  
+  display:flex;
+  justify-self: end;
+
 
 }
 i{
-    font-size: .8em;
+  font-size: .8em;
 }
 
 
 
 .owl-nav {
-    font-size: 35px !important; /* Adjust as needed to make arrows larger */
+  font-size: 35px !important; /* Adjust as needed to make arrows larger */
 }
 
 .owl-prev {
-    margin-right: 15px; /* Adds space between the arrows */
+  margin-right: 15px; /* Adds space between the arrows */
 }
 
 .owl-next {
-    margin-left: 15px; /* Adds space between the arrows */
+  margin-left: 15px; /* Adds space between the arrows */
 }
 
 
 .owl-carousel .owl-item {
-    transition: transform 0.4s, opacity 0.4s; /* Adjust time as needed */
+  transition: transform 0.4s, opacity 0.4s; /* Adjust time as needed */
 }
 
 .owl-carousel .owl-item:not(.active) {
-    opacity: 0.5; /* Adjust opacity as needed for non-active items */
+  opacity: 0.5; /* Adjust opacity as needed for non-active items */
 }
 
 
 .owl-nav {
-    font-size: 30px;
-  
+  font-size: 30px;
+
 }
 
 .owl-prev {
-    margin-right: 15px !important;
+  margin-right: 15px !important;
 }
 
 .owl-next {
-    margin-left: 15px !important;
+  margin-left: 15px !important;
 }
 
 .owl-carousel .owl-item {
-    transition: transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
 
 }
 
 .owl-carousel .owl-item:not(.active) {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    top: 50%;  /* Centers them vertically */
-    transform: translateY(0%);  /* Ensures the exact centering regardless of the button's height */
+  position: absolute;
+  top: 50%;  /* Centers them vertically */
+  transform: translateY(0%);  /* Ensures the exact centering regardless of the button's height */
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    left: 0;  /* Positions the left button to the left side of the carousel */
+  left: 0;  /* Positions the left button to the left side of the carousel */
 }
 
 .owl-carousel .owl-nav button.owl-next {
-    right: 0;  /* Positions the right button to the right side of the carousel */
+  right: 0;  /* Positions the right button to the right side of the carousel */
 }
 
 
 .owl-nav {
-    position: absolute;
-    top: 40%;
-    width: 100%;
+  position: absolute;
+  top: 40%;
+  width: 100%;
 }
 
 .owl-nav .owl-prev {
-    left: -45px !important; /* adjust as needed */
+  left: -45px !important; /* adjust as needed */
 }
 
 .owl-nav .owl-next {
-    right: 50px !important; /* adjust as needed */
+  right: 50px !important; /* adjust as needed */
 }
 
 .owl-nav .owl-prev, .owl-nav .owl-next {
-    transform: translateY(-20%);
+  transform: translateY(-20%);
 }
 
 #youtubeCarousel {
-    width: calc(100% - 100px);
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto; /* centers the carousel if it's not already centered */
+  width: calc(100% - 100px);
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto; /* centers the carousel if it's not already centered */
 }
 
 
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 
 @keyframes slideUp {
-    from {
-        transform: translateY(100%); /* Start from below its final position */
-        opacity: 0; /* Start from fully transparent */
-    }
-    to {
-        transform: translateY(0); /* End at its final position */
-        opacity: 1; /* End fully opaque */
-    }
+  from {
+      transform: translateY(100%); /* Start from below its final position */
+      opacity: 0; /* Start from fully transparent */
+  }
+  to {
+      transform: translateY(0); /* End at its final position */
+      opacity: 1; /* End fully opaque */
+  }
 }
 
 
 .right {
-    opacity: 0;  /* Initially hidden */
-    animation-name: slideUp; /* Refer to the keyframes defined above */
-    animation-duration: 1s; /* Duration of animation. Adjust as desired */
-    animation-timing-function: ease-out; /* Eases out for smooth end */
-    animation-fill-mode: forwards; /* Keeps the end state of animation */
-    animation-delay: 1.5s; /* Optional delay before the animation starts */
+  opacity: 0;  /* Initially hidden */
+  animation-name: slideUp; /* Refer to the keyframes defined above */
+  animation-duration: 1s; /* Duration of animation. Adjust as desired */
+  animation-timing-function: ease-out; /* Eases out for smooth end */
+  animation-fill-mode: forwards; /* Keeps the end state of animation */
+  animation-delay: 1.8s; /* Optional delay before the animation starts */
 }
 
 
 #contact {
-    padding-top: 20px;
-    padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 35px;
 
 }
 
 #contact h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #contact form {
-    max-width: 800px; /* Restrict the width of the form */
-    margin: 0 auto; /* Center the form */
+  max-width: 800px; /* Restrict the width of the form */
+  margin: 0 auto; /* Center the form */
 }
 
 #contact label {
-    display: block; /* Make the labels take up the full width of the form */
-    margin: 10px 0 5px; /* Space out the labels */
-    font-weight: bold; /* Bold the labels */
+  display: block; /* Make the labels take up the full width of the form */
+  margin: 10px 0 5px; /* Space out the labels */
+  font-weight: bold; /* Bold the labels */
 }
 
 #contact input,
 textarea {
-    width: 100%; /* Make inputs take up the full width of the form */
-    padding: 10px; /* Add padding to the inputs */
-    margin-bottom: 10px; /* Space out the inputs */
-    border: 1px solid #ccc; /* Add a border around the inputs */
-    border-radius: 5px; /* Slightly round the corners of the inputs */
+  width: 100%; /* Make inputs take up the full width of the form */
+  padding: 10px; /* Add padding to the inputs */
+  margin-bottom: 10px; /* Space out the inputs */
+  border: 1px solid #ccc; /* Add a border around the inputs */
+  border-radius: 5px; /* Slightly round the corners of the inputs */
 }
 #contact button {
-    padding: 8px 12px !important;             
-    font-size: 14px;                
-    background-color: #ff3f34;    /* Updated color */
-    color: #fff;                  
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: auto !important;                  
-    display: inline-block;        
+  padding: 8px 12px !important;             
+  font-size: 14px;                
+  background-color: #ff3f34;    /* Updated color */
+  color: #fff;                  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto !important;                  
+  display: inline-block;        
 }
 
 #contact button:hover {
-    background-color: #e6372a; /* Slightly darker shade for hover effect */
+  background-color: #e6372a; /* Slightly darker shade for hover effect */
 }
 
 
 #pricing {
-    text-align: center;
+  text-align: center;
 
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .price-option {
-    padding: 30px 0;
-    border-bottom: 1px solid #e0e0e0;
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .price-option:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 h3 {
-    font-size: 24px;  /* Make headers larger */
+  font-size: 24px;  /* Make headers larger */
 }
 
 .price-value {
-    font-size: 40px;  /* Much larger font size for the price */
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 40px;  /* Much larger font size for the price */
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .description {
-    margin-top: 15px;
-    font-style: italic;  /* Styling the description in italic for differentiation */
-    font-size: 16px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 15px;
+  font-style: italic;  /* Styling the description in italic for differentiation */
+  font-size: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Entire container, to keep perspective */
 .flip-container {
-    perspective: 1000px;
-  }
-  
-  /* Flip the pane when hovered */
-  .flip-container:hover .flipper,
-  .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-container,
-  .front,
-  .back {
-    width: 400px;
-    height: 400px;
-  }
-  
-  /* Flip speed goes here */
-  .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  
-  /* Hide back of pane during swap */
-  .front,
-  .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Front pane, placed above back */
-  .front {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-  
-  /* Back, initially hidden pane */
-  .back {
-    transform: rotateY(180deg);
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Style the song list */
-  .back .song-list {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-    counter-reset: song-number; /* Set up a counter for numbering */
-  }
-  
-  /* Style the song list items */
-  .back .song-list li {
-    counter-increment: song-number; /* Increment the counter */
-    margin: 10px 0; /* Add space between the items */
-    display: flex; /* Use flexbox for aligning number and song title */
-    align-items: center; /* Center items vertically */
-    text-align: left; /* Align text to the left */
-  }
-  
-  /* Style the numbers before the song titles */
-  .back .song-list li::before {
-    content: counter(song-number) ". "; /* Display the counter before the item text */
-    font-weight: bold; /* Make the numbers bold */
-    margin-right: 10px; /* Add space between the number and the song title */
-  }
-  
-  /* Style the links */
-  .back .song-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em; /* Adjust font size for readability */
-  }
-  
-  /* Style your audio player */
-  #audioPlayer {
-    position: absolute;
-    bottom: 10px;
-    width: calc(100% - 20px); /* Adjust width to account for padding */
-    left: 10px; /* Align with the left edge */
-  }
-  
-  /* Responsive design: when the screen is wide enough, switch to horizontal layout */
-  @media (min-width: 600px) {
-    .back .song-list {
-      flex-direction: row; /* Horizontal layout */
-      flex-wrap: wrap; /* Wrap items to next line if they don't fit */
-      justify-content: flex-start; /* Align items to the start (left) */
-    }
-    .back .song-list li {
-      width: 50%; /* Each item takes up half the width of the container */
-      margin: 5px 0; /* Adjust margin for horizontal layout */
-    }
-  }
-  
-  .tapes {
-    margin-bottom: 70px;
-   
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next row */
-    gap: 50px; 
-   
-  }
-  
+  perspective: 1000px;
+}
 
-  /* ... other styles ... */
+/* Flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 400px;
+  height: 400px;
+}
+
+/* Flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* Hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Front pane, placed above back */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* Back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Style the song list */
 .back .song-list {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-    counter-reset: song-number; /* Set up a counter for numbering */
-    padding-bottom: 60px; /* Add padding to bottom to make space for the player */
-  }
-  
-  /* Style the song list items */
-  .back .song-list li {
-    counter-increment: song-number; /* Increment the counter */
-    margin: 10px 0; /* Add space between the items */
-    display: flex; /* Use flexbox for aligning number and song title */
-    align-items: center; /* Center items vertically */
-    text-align: left; /* Align text to the left */
-    white-space: nowrap; /* Prevent the text from wrapping */
-  }
-  
-  /* ... other styles ... */
-  
-  /* Style your audio player */
-  #audioPlayer {
-    position: absolute;
-    bottom: 10px;
-    width: calc(100% - 20px); /* Adjust width to account for padding */
-    left: 10px; /* Align with the left edge */
-  }
-  
-  /* ... other styles ... */
-  
-  /* ... other styles ... */
-
-/* Style the back, initially hidden pane */
-
-  
-  /* ... other styles ... */
-  
-
-  /* ... other styles ... */
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  counter-reset: song-number; /* Set up a counter for numbering */
+}
 
 /* Style the song list items */
 .back .song-list li {
-    counter-increment: song-number; /* Increment the counter */
-    margin: 10px 0; /* Add space between the items */
-    padding: 5px 0; /* Add padding to give some space above and below the text */
-    display: flex; /* Use flexbox for aligning number and song title */
-    align-items: center; /* Center items vertically */
-    text-align: left; /* Align text to the left */
-    white-space: nowrap; /* Prevent the text from wrapping */
-    border-bottom: 1px solid #ccc; /* Add a line under each song */
+  counter-increment: song-number; /* Increment the counter */
+  margin: 10px 0; /* Add space between the items */
+  display: flex; /* Use flexbox for aligning number and song title */
+  align-items: center; /* Center items vertically */
+  text-align: left; /* Align text to the left */
+}
+
+/* Style the numbers before the song titles */
+.back .song-list li::before {
+  content: counter(song-number) ". "; /* Display the counter before the item text */
+  font-weight: bold; /* Make the numbers bold */
+  margin-right: 10px; /* Add space between the number and the song title */
+}
+
+/* Style the links */
+.back .song-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size for readability */
+}
+
+/* Style your audio player */
+#audioPlayer {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  left: 10px; /* Align with the left edge */
+}
+
+/* Responsive design: when the screen is wide enough, switch to horizontal layout */
+@media (min-width: 600px) {
+  .back .song-list {
+    flex-direction: row; /* Horizontal layout */
+    flex-wrap: wrap; /* Wrap items to next line if they don't fit */
+    justify-content: flex-start; /* Align items to the start (left) */
   }
-  
-  /* Last child should not have a border at the bottom */
-  .back .song-list li:last-child {
-    border-bottom: none;
+  .back .song-list li {
+    width: 50%; /* Each item takes up half the width of the container */
+    margin: 5px 0; /* Adjust margin for horizontal layout */
   }
-  
+}
+
+.tapes {
+  margin-bottom: 70px;
+ 
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  gap: 50px; 
+ 
+}
+
+
+/* ... other styles ... */
+
+/* Style the song list */
+.back .song-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  counter-reset: song-number; /* Set up a counter for numbering */
+  padding-bottom: 60px; /* Add padding to bottom to make space for the player */
+}
+
+/* Style the song list items */
+.back .song-list li {
+  counter-increment: song-number; /* Increment the counter */
+  margin: 10px 0; /* Add space between the items */
+  display: flex; /* Use flexbox for aligning number and song title */
+  align-items: center; /* Center items vertically */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+/* ... other styles ... */
+
+/* Style your audio player */
+#audioPlayer {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  left: 10px; /* Align with the left edge */
+}
+
+/* ... other styles ... */
+
+/* ... other styles ... */
+
+/* Style the back, initially hidden pane */
+
+
+/* ... other styles ... */
+
+
+/* ... other styles ... */
+
+/* Style the song list items */
+.back .song-list li {
+  counter-increment: song-number; /* Increment the counter */
+  margin: 10px 0; /* Add space between the items */
+  padding: 5px 0; /* Add padding to give some space above and below the text */
+  display: flex; /* Use flexbox for aligning number and song title */
+  align-items: center; /* Center items vertically */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  border-bottom: 1px solid #ccc; /* Add a line under each song */
+}
+
+/* Last child should not have a border at the bottom */
+.back .song-list li:last-child {
+  border-bottom: none;
+}
+
 /* ... other styles ... */
 
 /* Style the cover art with a subtle grey box shadow */
 .front .cover-art {
-  
 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  
-  /* ... other styles ... */
-  
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* ... other styles ... */
+
 .back {
-    background-color: rgb(44, 44, 44);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
-  #beattapes{
+#beattapes{
 
-    background: url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') repeat;
-  background-size: cover;
-  background-repeat: repeat;
-    width: 100%;
-  }
+  background: url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') repeat;
+background-size: cover;
+background-repeat: repeat;
+  width: 100%;
+}
 
-  .btn{
-    font-size: 3em;
-    text-transform: uppercase;
-    padding: 20px 0px;
-    color: #ff3f34;
-    text-align: center;
-  }
+.btn{
+  font-size: 3em;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  color: #ff3f34;
+  text-align: center;
+}
 
 
-  /* Base styles, which are mobile-first (these apply to all screen sizes) */
+/* Base styles, which are mobile-first (these apply to all screen sizes) */
 /* ... existing CSS ... */
 
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
-    header img {
-        width: 10em; /* Fixed size for larger screens */
-      
-    }
+  header img {
+      width: 10em; /* Fixed size for larger screens */
+    
+  }
 
-    .container {
-        margin: 0px 10%; /* Larger margin for larger screens */
-        padding: 0 4%; /* Relative padding */
-    }
+  .container {
+      margin: 0px 10%; /* Larger margin for larger screens */
+      padding: 0 4%; /* Relative padding */
+  }
 
-    .vids {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-    }
+  .vids {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+  }
 
-   
+ 
 
-    .pricing-table {
-        flex-direction: row; /* Row direction for desktops */
-    }
+  .pricing-table {
+      flex-direction: row; /* Row direction for desktops */
+  }
 
-    .owl-nav {
-        font-size: 35px; /* Larger arrows for larger screens */
-    }
+  .owl-nav {
+      font-size: 35px; /* Larger arrows for larger screens */
+  }
 }
 
 /* Large screens (desktops) */
 @media (min-width: 1024px) {
-    header {
-        height: 20vh; /* Smaller header for larger screens */
-    }
+  header {
+      height: 20vh; /* Smaller header for larger screens */
+  }
 
 
 
-    .container {
-        margin: 0px 15%; /* Larger margin for larger screens */
-        padding: 0 2%; /* Less padding for larger screens */
-    }
+  .container {
+      margin: 0px 15%; /* Larger margin for larger screens */
+      padding: 0 2%; /* Less padding for larger screens */
+  }
 
-    .vids {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
-    }
+  .vids {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  }
 
-  
 
-    .pricing-table {
-        justify-content: space-around; /* Space out pricing tables on larger screens */
-    }
 
-    .owl-nav {
-        display: block; /* Ensure nav is always visible on larger screens */
-    }
+  .pricing-table {
+      justify-content: space-around; /* Space out pricing tables on larger screens */
+  }
+
+  .owl-nav {
+      display: block; /* Ensure nav is always visible on larger screens */
+  }
 }
 
 /* Extra Large screens (wide desktops) */
 @media (min-width: 1200px) {
-    .container {
-        margin: 0px 20%; /* Even larger margin for extra large screens */
-    }
+  .container {
+      margin: 0px 20%; /* Even larger margin for extra large screens */
+  }
 
-  
+
 }
 
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 
 @media only screen and (max-width: 600px) {
-  #loader img {
-    width: 11.5em; /* Adjust the width of your logo image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-
- 
-  header {
-    padding: 4em !important;
-
-  }
-
-    body{
-        width: 100% !important;
-    }
- 
-    .container {
- width: 100%''
-
-     
-    }
-    nav{
-        display:none;
-    }
-
-    .right p{
-        width: 100%;
-    }
-
-    #beats{
-        display:none;
-    }
-    
-    #beattapes, .btn{
-       
-    display:none;
-      
-    }
-
-    
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px 0;
+#loader img {
+  width: 11.5em; /* Adjust the width of your logo image */
+  height: auto; /* Maintain aspect ratio */
 }
 
-   
+
+section h1 {
+  font-size: 2.5em;
+}
+
+header {
+  padding: 4em !important;
+
+}
+
+  body{
+      width: 100% !important;
   }
 
-  @media  only screen and (min-width: 1024px) {
+  .container {
+width: 100%;
 
-    header {
-        height: 20vh;
-        padding: 3em;
-    }
-
+    padding:0 !important;
+    margin: 0 !important;
   }
+
+  .right p{
+      width: 100%;
+  }
+
+  #beats{
+      display:none;
+  }
+  
+  #beattapes, .btn{
+     
+  display:none;
+    
+  }
+
+  
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+
  
+}
+
+@media  only screen and (min-width: 1024px) {
+
+  header {
+      height: 20vh;
+      padding: 3em;
+  }
+
+}
+
 /* Add this to your existing styles */
 .sticky {
-  background-color: rgba(0, 0, 0, 0.966) !important;
- border-bottom: 1px solid rgb(255, 63, 52);
+background-color: rgba(0, 0, 0, 0.966) !important;
+border-bottom: 1px solid rgb(255, 63, 52);
 
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff; /* You can change the background color to suit your design */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
-    z-index: 1000; /* Set a high z-index to ensure it stays on top of other elements */
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* You can change the background color to suit your design */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+  z-index: 1000; /* Set a high z-index to ensure it stays on top of other elements */
+}
 
-  /* Add this to your existing styles or create a new stylesheet */
+
+/* Add this to your existing styles or create a new stylesheet */
 #loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black; /* Black background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1000; /* Make sure it's on top of other elements */
-  }
-  
-  #loader img {
-    width: 12.5em; /* Adjust the width of your logo image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black; /* Black background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000; /* Make sure it's on top of other elements */
+}
 
-  #loader p {
-    margin-top: 10px; /* Adjust spacing between image and text */
-    font-size: 16px; /* Adjust font size */
-    color:white;
-  }
+#loader img {
+  width: 12.5em; /* Adjust the width of your logo image */
+  height: auto; /* Maintain aspect ratio */
+}
 
-  
-  textarea{
-    height: 10em;
 
-  }
+#loader p {
+  margin-top: 10px; /* Adjust spacing between image and text */
+  font-size: 16px; /* Adjust font size */
+  color:white;
+}
 
-  label{
-    padding-bottom: 2em !important;
-  }
 
-  .social {
-    --transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s linear, background 0.3s linear, border-color 0.3s linear;
-    --background: #FFF;
-    --text-color: #555;
-    
-    display: inline-flex;
-    gap: 2em;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    justify-content: center;
-    
-    .icon {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1em;
-      font-size: 1.8rem;
-      width: 2.2em;
-      height: 2.2em;
-      text-decoration: none;
-      background: var(--background);
-      color: var(--text-color);
-      border-radius: 50%;
-      box-shadow: 0 8px 16px -4px rgba(0,0,0,.15);
-      transition: var(--transition);
-      
-      &:focus,
-      &:focus-visible {
-        outline: none;
-      }
-    }
-    
-    .name {
-      position: absolute;
-      top: 0;
-      background: var(--background);
-      color: #FFF;
-      box-shadow: inherit;
-      font-size: 1.2rem;
-      padding: .25em .4em;
-      border-radius: .3em;
-      opacity: 0;
-      transition: var(--transition);
-      
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -.325em;
-        left: 50%;
-        border-top: .35em solid var(--background);
-        border-left: .35em solid transparent;
-        border-right: .35em solid transparent;
-        transform: translateX(-50%);
-        transition: var(--transition);
-      }
-    }
-    
-    .icon:hover,
-    .icon:focus {
-      .name {
-        transform: translateY(-2.85em);
-        opacity: 1;
-      }
-    }
-    
-    [href^="https://instagram.com"] {
-      --text-color: #962FBF;
-      &:hover,
-      &:focus {
-        --background: #962FBF;
-        --text-color: #fff;
-      }
-    }
-    
-    [href^="https://youtube.com"] {
-      --text-color: #CD201F;
-      &:hover,
-      &:focus {
-        --background: #CD201F;
-        --text-color: #fff;
-      }
-    }
-    
-    [href^="https://tiktok.com"] {
-      --text-color: #000;
-      &:hover,
-      &:focus {
-        --background: #000;
-        --text-color: #fff;
-      }
-    }
-  }
+textarea{
+  height: 10em;
+
+}
+
+label{
+  padding-bottom: 2em !important;
+}
+
+.social {
+  --transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s linear, background 0.3s linear, border-color 0.3s linear;
+  --background: #FFF;
+  --text-color: #555;
   
+  display: inline-flex;
+  gap: 2em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
   
-  
-  
-  
-  
-  .social
   .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.8rem;
+    width: 2.2em;
+    height: 2.2em;
+    text-decoration: none;
+    background: var(--background);
+    color: var(--text-color);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px -4px rgba(0,0,0,.15);
+    transition: var(--transition);
     
-      width: 2em;
-      height: 2em;
-     
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
   }
+  
+  .name {
+    position: absolute;
+    top: 0;
+    background: var(--background);
+    color: #FFF;
+    box-shadow: inherit;
+    font-size: 1.2rem;
+    padding: .25em .4em;
+    border-radius: .3em;
+    opacity: 0;
+    transition: var(--transition);
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -.325em;
+      left: 50%;
+      border-top: .35em solid var(--background);
+      border-left: .35em solid transparent;
+      border-right: .35em solid transparent;
+      transform: translateX(-50%);
+      transition: var(--transition);
+    }
+  }
+  
+  .icon:hover,
+  .icon:focus {
+    .name {
+      transform: translateY(-2.85em);
+      opacity: 1;
+    }
+  }
+  
+  [href^="https://instagram.com"] {
+    --text-color: #962FBF;
+    &:hover,
+    &:focus {
+      --background: #962FBF;
+      --text-color: #fff;
+    }
+  }
+  
+  [href^="https://youtube.com"] {
+    --text-color: #CD201F;
+    &:hover,
+    &:focus {
+      --background: #CD201F;
+      --text-color: #fff;
+    }
+  }
+  
+  [href^="https://tiktok.com"] {
+    --text-color: #000;
+    &:hover,
+    &:focus {
+      --background: #000;
+      --text-color: #fff;
+    }
+  }
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+
+
+
+
+.social
+.icon {
+  
+    width: 2em;
+    height: 2em;
+   
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 
 header img {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 1.8s; /* This will delay the start of the animation by 1 second */
-  animation-fill-mode: both; /* This will maintain the final state after the animation completes */
+animation-name: fadeIn;
+animation-duration: 1s;
+animation-delay: 1.9s; /* This will delay the start of the animation by 1 second */
+animation-fill-mode: both; /* This will maintain the final state after the animation completes */
 }
 
 
 
 
 @keyframes fade {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+0%, 100% { opacity: 0; }
+50% { opacity: 1; }
 }
 
 
 
 #loader p {
-  animation: fade 1.5s ease-in-out infinite;
+animation: fade 1.5s ease-in-out infinite;
 }
 
-section h1 {
-  font-size: 3em;
-  text-transform: uppercase;
- 
-  color: #ff3f34;
-  padding: 1em 0px !important;
-  
+/* Mobile view */
+/* Mobile view */
+
+
+
+/* Desktop view */
+@media (max-width: 700px) {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2.5em;
+  position: relative;
 }
+
+#nav-links {
+  display: none;
+  width: 60%;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100000;
+  background-color: #101010 !important;
+/* Added a white border */
+  transition: max-height 0.3s ease; /* Transition for smooth animation */
+  overflow: hidden; /* Prevents content from spilling out during animation */
+  max-height: 0; /* Start with 0 height */
+}
+
+#nav-links.toggle {
+  display: flex;
+  max-height: 500px; /* Adjust as needed for your content */
+}
+
+#hamburger-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 2.5em;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials a {
+  color: white;
+  font-size: 2em;
+  margin-left: .5em;
+}
+
+section{
+  padding: 2.1em;
+}
+
+#contact{
+  padding: 2.5em;
+}
+
+.sticky{
+  width:80%;
+}
+
+h1{
+  font-size: 2em !important;
+}
+
+/* ... other styles ... */
+}
+
+/* Additional JavaScript to handle the clicking of the hamburger icon */
+
+
+
+/* ... other styles ... */
+
+nav li {
+margin-left: 20px;
+font-size: 24px;
+font-weight: 500;
+position: relative;
+text-decoration: none;
+list-style: none;
+color: rgb(255, 255, 255);
+display: inline-block; /* Changed from block to inline-block */
+border-bottom: 0px solid #ff3f34; /* This line can be removed if not needed */
+padding: 10px 20px; /* Add padding to create space for the background */
+border-radius: 25px; /* Half of height to create a pill shape */
+transition: background-color 0.3s ease; /* Smooth background color transition */
+cursor: pointer;
+}
+
+nav li:hover {
+background-color: #ff3f34; /* Pill shape's background color on hover */
+}
+
+/* ... other styles ... */
