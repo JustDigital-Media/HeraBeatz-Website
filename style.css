@@ -12,8 +12,8 @@ footer{
 }
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 
 }
 
@@ -59,15 +59,17 @@ header img {
 }
 
 nav{
-    background-color: #101010;
+    background-color: #161616;
     box-shadow: 10px solid black;
- 
+    border-bottom: 1px solid #ff3f34;
+    
+    border-top: 1px solid #ff3f34;
     align-items: center;
 }
 
 nav ul{
     display:flex;
-
+    padding: 20px;
     justify-content: center;
 
    
@@ -91,7 +93,22 @@ nav li, .beat-tape li{
 
 }
 
-
+li::after {
+    content: "";
+  
+    position: absolute; /* Position pseudo-element absolutely within the li */
+    left: 0;
+    bottom: -7px;
+    width: 0; /* Set initial width to 0 */
+    height: 2.4px; /* Set the height of the pseudo-element, for example, an underline effect */
+ /* Set the initial background color of the pseudo-element */
+    transition: all 0.3s ease; /* Use a smooth transition effect */
+  }
+  
+  nav li:hover::after, .beat-tape li:hover::after {
+    width: 100%; /* Expand the width on hover */
+    background-color: #ff3f34; /* Set the background color on hover */
+  }
   
   li:hover {
 
@@ -122,13 +139,6 @@ section {
 
 }
 
-section h1 {
-    font-size: 2.7em;
-    text-transform: uppercase;
-    padding: .8em 0px !important;
-    color: #ff3f34
-    
-}
 
 .about-section{
 
@@ -151,7 +161,7 @@ text-align: center !important;
 
 .right{
     width: 100%;
-    padding-bottom: 20px;
+    padding: 20px 0;
     text-align: left !important;
     margin: 10px 0; /* Gives a little space between the paragraphs */
     color: #ffffff; /* Link color, you can adjust as needed */
@@ -373,7 +383,7 @@ body {
     animation-duration: 1s; /* Duration of animation. Adjust as desired */
     animation-timing-function: ease-out; /* Eases out for smooth end */
     animation-fill-mode: forwards; /* Keeps the end state of animation */
-    animation-delay: 1.8s; /* Optional delay before the animation starts */
+    animation-delay: 1.5s; /* Optional delay before the animation starts */
 }
 
 
@@ -746,10 +756,7 @@ a {
   }
   
 
-  section h1 {
-    font-size: 2.5em;
-  }
-
+ 
   header {
     padding: 4em !important;
 
@@ -760,10 +767,12 @@ a {
     }
  
     .container {
- width: 100%;
+ width: 100%''
 
-      padding:0 !important;
-      margin: 0 !important;
+     
+    }
+    nav{
+        display:none;
     }
 
     .right p{
@@ -969,7 +978,7 @@ form {
 header img {
   animation-name: fadeIn;
   animation-duration: 1s;
-  animation-delay: 1.9s; /* This will delay the start of the animation by 1 second */
+  animation-delay: 1.8s; /* This will delay the start of the animation by 1 second */
   animation-fill-mode: both; /* This will maintain the final state after the animation completes */
 }
 
@@ -987,102 +996,11 @@ header img {
   animation: fade 1.5s ease-in-out infinite;
 }
 
-/* Mobile view */
-/* Mobile view */
-
-
-
-/* Desktop view */
-@media (max-width: 700px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2.5em;
-    position: relative;
-  }
-
-  #nav-links {
-    display: none;
-    width: 60%;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 100000;
-    background-color: #101010 !important;
-  /* Added a white border */
-    transition: max-height 0.3s ease; /* Transition for smooth animation */
-    overflow: hidden; /* Prevents content from spilling out during animation */
-    max-height: 0; /* Start with 0 height */
-  }
-
-  #nav-links.toggle {
-    display: flex;
-    max-height: 500px; /* Adjust as needed for your content */
-  }
-
-  #hamburger-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 2.5em;
-    color: white;
-  }
-
-  .socials {
-    display: flex;
-    align-items: center;
-  }
-
-  .socials a {
-    color: white;
-    font-size: 2em;
-    margin-left: .5em;
-  }
-
-  section{
-    padding: 2.1em;
-  }
-
-  #contact{
-    padding: 2.5em;
-  }
-
-  .sticky{
-    width:80%;
-  }
-
-  h1{
-    font-size: 2em !important;
-  }
-
-  /* ... other styles ... */
+section h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+ 
+  color: #ff3f34;
+  padding: 1em 0px !important;
+  
 }
-
-/* Additional JavaScript to handle the clicking of the hamburger icon */
-
-
-
-/* ... other styles ... */
-
-nav li {
-  margin-left: 20px;
-  font-size: 24px;
-  font-weight: 500;
-  position: relative;
-  text-decoration: none;
-  list-style: none;
-  color: rgb(255, 255, 255);
-  display: inline-block; /* Changed from block to inline-block */
-  border-bottom: 0px solid #ff3f34; /* This line can be removed if not needed */
-  padding: 10px 20px; /* Add padding to create space for the background */
-  border-radius: 25px; /* Half of height to create a pill shape */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-  cursor: pointer;
-}
-
-nav li:hover {
-  background-color: #ff3f34; /* Pill shape's background color on hover */
-}
-
-/* ... other styles ... */
